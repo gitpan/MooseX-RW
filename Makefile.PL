@@ -20,7 +20,7 @@ my %WriteMakefileArgs = (
   "LICENSE" => "gpl",
   "NAME" => "MooseX::RW",
   "PREREQ_PM" => {},
-  "VERSION" => "0.001",
+  "VERSION" => "0.002",
   "test" => {
     "TESTS" => "t/*.t"
   }

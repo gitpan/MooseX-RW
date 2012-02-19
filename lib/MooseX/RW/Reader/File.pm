@@ -1,6 +1,6 @@
 package MooseX::RW::Reader::File;
 {
-  $MooseX::RW::Reader::File::VERSION = '0.001';
+  $MooseX::RW::Reader::File::VERSION = '0.002';
 }
 # ABSTRACT: A Moose::Role file reader
 
@@ -8,7 +8,6 @@ use Moose::Role;
 use Carp;
 
 with 'MooseX::RW::Reader';
-
 
 
 
@@ -29,7 +28,7 @@ has file => (
 
 
 
-has fh => ( is => 'rw' );
+has fh => ( is => 'rw', );
 
 
 
@@ -58,7 +57,7 @@ MooseX::RW::Reader::File - A Moose::Role file reader
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 ATTRIBUTES
 
@@ -69,13 +68,14 @@ does't exist. Setting this attribute will set L<fh> attribute.
 
 =head2 fh
 
-File handle form which writing.
+File handle form which reading.
 
 =head1 METHODS
 
 =head2 percentage
 
-Returns the percentage of the file which has been read, with 2 decimals.
+Returns the percentage of the file which has been read, with 2 decimals. Based
+on values returned by stat() and tell() method from the file handle.
 
 =head1 AUTHOR
 

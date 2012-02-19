@@ -14,4 +14,4 @@ meta-spec:
 name: MooseX-RW
 resources:
   repository: http://git.tamil.fr/git/MooseX::RW
-version: 0.001
+version: 0.002
