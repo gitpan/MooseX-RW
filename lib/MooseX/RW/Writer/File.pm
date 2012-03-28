@@ -1,6 +1,6 @@
 package MooseX::RW::Writer::File;
 {
-  $MooseX::RW::Writer::File::VERSION = '0.002';
+  $MooseX::RW::Writer::File::VERSION = '0.003';
 }
 # ABSTRACT: A role for file writer
 
@@ -42,7 +42,7 @@ MooseX::RW::Writer::File - A role for file writer
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 ATTRIBUTES
 

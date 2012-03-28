@@ -1,6 +1,6 @@
 package MooseX::RW::Writer;
 {
-  $MooseX::RW::Writer::VERSION = '0.002';
+  $MooseX::RW::Writer::VERSION = '0.003';
 }
 # ABSTRACT: Generic Moose::Role writer 
 
@@ -31,7 +31,7 @@ MooseX::RW::Writer - Generic Moose::Role writer
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 METHODS
 

@@ -1,6 +1,6 @@
 package MooseX::RW;
 {
-  $MooseX::RW::VERSION = '0.002';
+  $MooseX::RW::VERSION = '0.003';
 }
 # ABSTRACT: Moose::Role reader/writer
 
@@ -35,7 +35,7 @@ MooseX::RW - Moose::Role reader/writer
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
@@ -59,6 +59,7 @@ of your messages.
     return if $vb->count >= $count;
     my $msg = $phone->voicebox->get_msg($count);
     $self->count($count+1);
+    return $msg;
  }
  
  package Main;

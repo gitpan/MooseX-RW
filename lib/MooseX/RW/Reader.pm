@@ -1,6 +1,6 @@
 package MooseX::RW::Reader;
 {
-  $MooseX::RW::Reader::VERSION = '0.002';
+  $MooseX::RW::Reader::VERSION = '0.003';
 }
 # ABSTRACT: Moose::Role reader
 
@@ -30,7 +30,7 @@ MooseX::RW::Reader - Moose::Role reader
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 METHODS
 

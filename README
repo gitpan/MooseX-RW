@@ -2,7 +2,7 @@ NAME
     MooseX::RW - Moose::Role reader/writer
 
 VERSION
-    version 0.002
+    version 0.003
 
 SYNOPSIS
     Let suppose you have a voice box on you phone. You want to display all
@@ -25,6 +25,7 @@ SYNOPSIS
         return if $vb->count >= $count;
         my $msg = $phone->voicebox->get_msg($count);
         $self->count($count+1);
+        return $msg;
      }
      
  package Main;
